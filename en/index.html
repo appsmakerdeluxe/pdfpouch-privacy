@@ -1,1 +1,212 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PDFPouch – Privacy & Support</title><link rel="stylesheet" href="../assets/site.css"></head><body><header><div class="wrap"><h1>PDFPouch – Privacy & Support</h1><nav><a href="../">Deutsch</a><a href="../privacy/">Privacy</a></nav></div></header><main class="wrap"><section class="card"><h2>Private PDF tools</h2><p>PDFPouch processes user-selected PDFs locally on the device. It has no account, advertising, analytics, tracking or PDFPouch cloud service.</p><h2>Files and camera</h2><p>Files are selected and saved through Android's system picker. Camera access is used only when you choose to scan a document. Temporary files remain local.</p><h2>Support</h2><p><a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a></p></section></main></body></html>
+﻿<!doctype html>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content=width=device-width, initial-scale=1>
+  <title>PDFPouch – Privacy Policy &amp; Support</title>
+  <meta name=description content=Official Privacy Policy and support details for the Android app PDFPouch by AppsMakerDeluxe. 100% local, offline, and ad-free.>
+  <link rel=stylesheet href=../assets/site.css>
+  <link rel=icon type=image/png href=../assets/icon-512.png>
+</head>
+<body>
+
+<header>
+  <div class=wrap>
+    <div class=header-inner>
+      <div class=brand-wrap>
+        <img src=../assets/icon-512.png alt=PDFPouch Icon class=brand-icon>
+        <div>
+          <div class=brand-title>PDFPouch</div>
+          <div class=brand-subtitle>Privacy Policy &amp; Support</div>
+        </div>
+      </div>
+      <nav class=lang-switcher aria-label=Language selection>
+        <a href=../index.html class=lang-btn>Deutsch</a>
+        <a href=index.html class=lang-btn active>English</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main class=wrap>
+
+  <!-- Trust Badges -->
+  <section class=trust-grid aria-label=Privacy core highlights>
+    <div class=trust-badge>
+      <div class=trust-icon>🛡️</div>
+      <div>
+        <div class=trust-title>100% Offline</div>
+        <div class=trust-desc>No INTERNET permission. No background uploads.</div>
+      </div>
+    </div>
+    <div class=trust-badge>
+      <div class=trust-icon>🚫</div>
+      <div>
+        <div class=trust-title>Zero Tracking</div>
+        <div class=trust-desc>No ads, no analytics, no third-party tracking SDKs.</div>
+      </div>
+    </div>
+    <div class=trust-badge>
+      <div class=trust-icon>🔒</div>
+      <div>
+        <div class=trust-title>No Account</div>
+        <div class=trust-desc>No registration, no password required. Immediate use.</div>
+      </div>
+    </div>
+    <div class=trust-badge>
+      <div class=trust-icon>📂</div>
+      <div>
+        <div class=trust-title>Full Control</div>
+        <div class=trust-desc>Files opened and saved strictly via Android's SAF file picker.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <nav class=nav-pills aria-label=Section navigation>
+    <a href=#controller class=nav-pill>Data Controller</a>
+    <a href=#principles class=nav-pill>Core Principles</a>
+    <a href=#permissions class=nav-pill>Permissions</a>
+    <a href=#datamap class=nav-pill>Data Map Table</a>
+    <a href=#gdpr class=nav-pill>Your Rights (GDPR)</a>
+    <a href=#contact class=nav-pill>Contact</a>
+  </nav>
+
+  <!-- Main Privacy Policy Card -->
+  <article class=card>
+    <span class=tag-badge>Effective Date: September 2026</span>
+    <h1 class=card-title>Privacy Policy for PDFPouch</h1>
+
+    <div class=info-box>
+      <div class=info-box-title>In a nutshell:</div>
+      PDFPouch is a completely offline, local Android application for document reading and manipulation. Your documents, signatures, camera scans, and preferences never leave your device. We do not require accounts, and no diagnostic or usage data is transmitted to AppsMakerDeluxe or third parties.
+    </div>
+
+    <section id=controller>
+      <h2>1. Data Controller</h2>
+      <p>The data controller responsible for the processing of data within the meaning of the General Data Protection Regulation (GDPR) and international privacy laws is:</p>
+      <p>
+        <strong>AppsMakerDeluxe</strong><br>
+        Developer Support: <a href=mailto:appsmakerdeluxe@gmail.com>appsmakerdeluxe@gmail.com</a><br>
+        Google Play Console Developer ID: <code>5102432874599248844</code>
+      </p>
+    </section>
+
+    <section id=principles>
+      <h2>2. Core Principles &amp; Local Processing</h2>
+      <p>The application <strong>PDFPouch</strong> (package name: <code>com.appsmakerdeluxe.pdfpouch</code>) is architected around the principles of Privacy by Design and Privacy by Default:</p>
+      <ul>
+        <li><strong>No Internet Permission:</strong> The app's manifest deliberately omits the <code>android.permission.INTERNET</code> permission. The app is technically incapable of sending data across cellular networks or Wi-Fi.</li>
+        <li><strong>No Third-Party Tracking SDKs:</strong> No analytics libraries (such as Google Analytics, Firebase Analytics, Mixpanel) and no ad networks (such as Google AdMob) are bundled into the codebase.</li>
+        <li><strong>No Accounts or Logins:</strong> All features are accessible immediately without registration, usernames, or passwords.</li>
+      </ul>
+    </section>
+
+    <section id=permissions>
+      <h2>3. Device Permissions &amp; File Access</h2>
+      <p>PDFPouch only requests the absolute minimum permissions necessary for its user-directed operations:</p>
+      <ul>
+        <li><strong>Camera (<code>android.permission.CAMERA</code>):</strong> Used exclusively when you intentionally launch the scanning feature (Document scan) to take pictures of paper documents. Captured image data resides only in volatile memory or temporary cache, and is discarded once the PDF is assembled or canceled.</li>
+        <li><strong>File Access via Storage Access Framework (SAF):</strong> PDFPouch does not ask for broad storage access (no <code>MANAGE_EXTERNAL_STORAGE</code> or legacy storage permissions). Opening and saving files uses Android's modern Storage Access Framework, giving the app access only to the explicit files you select.</li>
+        <li><strong>Safe File Operations:</strong> All write operations (merge, reorder, sign, compress) first write to a private temporary cache file and validate the output. Your original PDF files are never modified or overwritten silently. The new PDF is written to your chosen location only when you confirm in the system save dialog.</li>
+      </ul>
+    </section>
+
+    <section id=datamap>
+      <h2>4. Data Flow Map</h2>
+      <p>The following table outlines what data is handled by the application, where it is stored, and whether it is shared:</p>
+
+      <div class=table-wrap>
+        <table>
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Purpose</th>
+              <th>Storage Location</th>
+              <th>Transmission / Third Parties</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Selected PDF URIs &amp; File Names</strong></td>
+              <td>Recent documents history for fast reopening</td>
+              <td>Local Android DataStore (private internal storage)</td>
+              <td>None; can be cleared individually or completely anytime</td>
+            </tr>
+            <tr>
+              <td><strong>PDF Document Content</strong></td>
+              <td>Viewing, text search, page management, merge, compression</td>
+              <td>Local app cache and user-selected storage path</td>
+              <td>None; never transmitted to developers or external servers</td>
+            </tr>
+            <tr>
+              <td><strong>Camera Photos</strong></td>
+              <td>User-initiated document scanning</td>
+              <td>Volatile RAM / temporary cache</td>
+              <td>None; purged after target PDF generation</td>
+            </tr>
+            <tr>
+              <td><strong>Hand-drawn Signatures</strong></td>
+              <td>Visual stamping onto target document page</td>
+              <td>Volatile memory during placement</td>
+              <td>None; stamped directly into the resulting PDF copy</td>
+            </tr>
+            <tr>
+              <td><strong>Theme Settings</strong></td>
+              <td>System / Light / Dark theme selection</td>
+              <td>Local DataStore</td>
+              <td>None</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id=external-actions>
+      <h2>5. External Actions (Share &amp; Print)</h2>
+      <p>
+        When you use the <em>Share</em> or <em>Print</em> actions in the viewer, PDFPouch delegates to Android system dialogs:
+      </p>
+      <ul>
+        <li><strong>Sharing:</strong> The PDF copy is handed off to the destination app chosen by you (e.g. email client, messaging app). The privacy policy of that selected third-party app then applies.</li>
+        <li><strong>Printing:</strong> The document is handed to your device's installed print service via the Android Print Framework.</li>
+        <li><strong>Web Links in Documents:</strong> If a document contains a hyperlink, PDFPouch validates the URL scheme (allowing only safe <code>http://</code> and <code>https://</code> protocols) and requests your confirmation before opening it in your default browser.</li>
+      </ul>
+    </section>
+
+    <section id=gdpr>
+      <h2>6. Your Rights Under GDPR and Global Regulations</h2>
+      <p>Because PDFPouch does not transmit your personal data to remote servers, all your data remains under your direct, physical control on your device. Under Chapter III of the GDPR, you have the following rights:</p>
+      <ul>
+        <li><strong>Right to Erasure (Art. 17 GDPR):</strong> You can clear your recent document history at any time with a single tap in the app. Uninstalling the app removes all cached files and preferences stored in the app's internal sandbox.</li>
+        <li><strong>Right of Access (Art. 15 GDPR) &amp; Rectification (Art. 16 GDPR):</strong> If you contact us via email, you have the right to request information regarding any personal data communicated in that correspondence.</li>
+        <li><strong>Right to Lodge a Complaint (Art. 77 GDPR):</strong> You have the right to lodge a complaint with a supervisory data protection authority if you believe your privacy rights have been infringed.</li>
+      </ul>
+    </section>
+
+    <section id=contact>
+      <h2>7. Contact &amp; Support</h2>
+      <p>For questions regarding privacy, bug reports, or feedback regarding PDFPouch, please reach out directly:</p>
+      <div class=contact-box>
+        <strong>AppsMakerDeluxe</strong><br>
+        Email for Privacy &amp; App Support:<br>
+        <a href=mailto:appsmakerdeluxe@gmail.com class=contact-email>appsmakerdeluxe@gmail.com</a>
+      </div>
+    </section>
+  </article>
+
+</main>
+
+<footer>
+  <div class=wrap footer-inner>
+    <div class=footer-links>
+      <a href=../index.html>Datenschutz (DE)</a>
+      <a href=index.html>Privacy Policy (EN)</a>
+      <a href=mailto:appsmakerdeluxe@gmail.com>Support</a>
+    </div>
+    <div>&copy; 2026 AppsMakerDeluxe. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
