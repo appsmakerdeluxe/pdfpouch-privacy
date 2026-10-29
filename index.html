@@ -3,8 +3,8 @@
 <head>
   <meta charset=utf-8>
   <meta name=viewport content=width=device-width, initial-scale=1>
-  <title>PDFPouch – Datenschutzerklärung & Support</title>
-  <meta name=description content=Offizielle Datenschutzerklärung und Support-Informationen für die Android-App PDFPouch von AppsMakerDeluxe. 100% lokal, offline, werbefrei.>
+  <title>PDFPouch & PDFPouch Pro – Datenschutz & Support</title>
+  <meta name=description content=Datenschutz- und Supportinformationen für PDFPouch und PDFPouch Pro für Android. Dokumente werden auf dem Gerät verarbeitet; externe Speicherorte und Systemaktionen werden vom Nutzer gewählt.>
   <link rel=stylesheet href=assets/site.css>
   <link rel=icon type=image/png href=assets/icon-512.png>
 </head>
@@ -16,7 +16,7 @@
       <div class=brand-wrap>
         <img src=assets/icon-512.png alt=PDFPouch Icon class=brand-icon>
         <div>
-          <div class=brand-title>PDFPouch</div>
+          <div class=brand-title>PDFPouch · Pro</div>
           <div class=brand-subtitle>Datenschutzerklärung &amp; Support</div>
         </div>
       </div>
@@ -74,40 +74,41 @@
 
   <!-- Main Privacy Policy Card -->
   <article class=card>
-    <span class=tag-badge>Stand: September 2026</span>
-    <h1 class=card-title>Datenschutzerklärung für PDFPouch</h1>
+    <span class=tag-badge>Stand: Oktober 2026</span>
+    <h1 class=card-title>Datenschutzerklärung für PDFPouch und PDFPouch Pro</h1>
 
     <div class=info-box>
       <div class=info-box-title>Kurz und bündig:</div>
-      PDFPouch ist eine vollständig lokale Android-Anwendung für Dokumenten-Management. Ihre Dokumente, Unterschriften, Scans und Einstellungen bleiben ausnahmslos auf Ihrem eigenen Endgerät. Es werden weder Benutzerkonten angelegt noch Diagnosedaten an Dritte oder Server von AppsMakerDeluxe übertragen.
+      PDFPouch und PDFPouch Pro verarbeiten Dokumente in der App lokal auf Ihrem Gerät. Die Apps haben keine Internet-Berechtigung und enthalten keine Werbe- oder Analyse-SDKs. Sie wählen selbst, welche Dateien und Speicherorte Sie über Android öffnen; darunter können auch Cloudanbieter sein. Teilen, Drucken und das Öffnen bestätigter Weblinks übergeben Daten an den jeweils gewählten externen Anbieter.
     </div>
 
     <section id=verantwortlicher>
       <h2>1. Verantwortliche Stelle</h2>
       <p>Verantwortlicher für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) und anderer nationaler Datenschutzgesetze ist:</p>
       <p>
-        <strong>AppsMakerDeluxe</strong><br>
+        <strong>AppsMakerDeluxe (Entwickler-Marke: AppsMakerDeluxe Studios)</strong><br>
         Entwickler-Support: <a href="mailto:appsmakerdeluxe@gmail.com">appsmakerdeluxe@gmail.com</a>
       </p>
     </section>
 
     <section id=grundprinzipien>
       <h2>2. Grundprinzipien &amp; Lokale Verarbeitung</h2>
-      <p>Die App <strong>PDFPouch</strong> (Paketname: <code>com.appsmakerdeluxe.pdfpouch</code>) wurde nach den Prinzipien „Privacy by Design“ und „Privacy by Default“ entwickelt:</p>
+      <p>Diese Erklärung gilt für <strong>PDFPouch</strong> (Paketname: <code>com.appsmakerdeluxe.pdfpouch</code>) und <strong>PDFPouch Pro</strong> (Paketname: <code>com.appsmakerdeluxe.pdfpouchpro</code>):</p>
       <ul>
         <li><strong>Keine Internetverbindung:</strong> Das Manifest der App deklariert bewusst <em>keine</em> <code>android.permission.INTERNET</code>-Berechtigung. Die App ist technisch nicht in der Lage, eigenständig Daten über das Netzwerk oder Mobilfunk zu übertragen.</li>
-        <li><strong>Keine Tracking- oder Werbe-SDKs:</strong> Es sind keine Analysewerkzeuge (wie Google Analytics, Firebase Analytics, Mixpanel) und keine Werbenetzwerke (wie Google AdMob) in den Quellcode eingebunden.</li>
+        <li><strong>Keine Werbe- oder Analyse-SDKs:</strong> Die Apps enthalten keine Werbenetzwerke und keine Analytics- oder Tracking-SDKs.</li>
         <li><strong>Keine Kontopflicht:</strong> Zur Nutzung aller Funktionen ist weder eine Registrierung noch ein Login erforderlich.</li>
       </ul>
     </section>
 
     <section id=berechtigungen>
       <h2>3. Berechtigungen und Dateizugriff</h2>
-      <p>PDFPouch beschränkt sich auf das absolute technische Minimum:</p>
+      <p>Die Apps beschränken sich auf erforderliche Berechtigungen:</p>
       <ul>
         <li><strong>Kamera (<code>android.permission.CAMERA</code>):</strong> Wird ausschließlich verwendet, wenn Sie die Scan-Funktion („Dokument scannen“) aktiv aufrufen, um physische Dokumentseiten zu fotografieren. Die erzeugten Bilder werden direkt im geräteeigenen flüchtigen Arbeitsspeicher bzw. temporären Cache abgelegt und nach Erstellung der PDF-Datei oder Abbruch restlos gelöscht.</li>
-        <li><strong>Speicherzugriff (SAF):</strong> PDFPouch fordert keine pauschalen Lese- oder Schreibrechte für den Gesamtspeicher (kein <code>MANAGE_EXTERNAL_STORAGE</code>). Das Öffnen und Speichern erfolgt ausnahmslos über das offizielle Android Storage Access Framework (SAF). PDFPouch erhält damit nur Zugriff auf die exakt von Ihnen ausgewählten Dokumente.</li>
-        <li><strong>Sicheres Bearbeiten:</strong> Sämtliche schreibenden Vorgänge (Zusammenführen, Seiten neu anordnen, Signieren, Komprimieren) erstellen stets eine temporäre Cache-Datei auf Ihrem Gerät. Originaldokumente werden niemals stillschweigend überschrieben. Erst wenn Sie im System-Speicherdialog den Speicherort bestätigen, wird die bearbeitete Kopie gesichert.</li>
+        <li><strong>Dateizugriff (SAF):</strong> Es gibt keine pauschalen Speicherrechte. Öffnen, Import und Export verwenden den Android-Dateiauswahldialog. Je nach Ihrer Auswahl kann ein Anbieter Dateien lokal oder in einem Cloudspeicher bereitstellen.</li>
+        <li><strong>Bearbeitung:</strong> PDF-Ausgaben werden als neue Kopien erstellt. Für Stapelabläufe wählen Sie ausdrücklich Quell-PDFs und einen Zielordner. Nicht benötigte temporäre Arbeitsdateien werden nach dem Vorgang gelöscht; Android kann Cache-Dateien bei Prozessabbruch oder Speicherdruck selbst entfernen.</li>
+        <li><strong>Offline-OCR und Pro-Funktionen:</strong> PDFPouch Pro erkennt gedruckten deutschen oder englischen Text lokal mit mitgelieferten Modellen. Formularwerte, Notizen, Hervorhebungen, Freihand-Anmerkungen, Wasserzeichen, Seitenzahlen und Passwörter werden nur im ausgewählten Dokument verarbeitet. Passwörter werden nicht als Ablaufvorlage gespeichert.</li>
       </ul>
     </section>
 
@@ -134,14 +135,14 @@
             </tr>
             <tr>
               <td><strong>PDF-Dokumentinhalte</strong></td>
-              <td>Anzeige, Textsuche, Seitenverwaltung, Zusammenführung, Komprimierung</td>
-              <td>Lokaler App-Cache und vom Nutzer ausgewählter Speicherpfad</td>
-              <td>Keine Übertragung an Entwickler oder Dritte</td>
+              <td>Anzeige, Bearbeitung, Formulare, Annotationen und OCR (Pro)</td>
+              <td>App-Speicher während der Verarbeitung und der von Ihnen gewählte Dateianbieter</td>
+              <td>Keine automatische Übertragung durch die App. Ein ausgewählter Cloudanbieter verarbeitet Dateien nach seinen Bedingungen.</td>
             </tr>
             <tr>
               <td><strong>Kamera-Aufnahmen</strong></td>
               <td>Nutzerinitiierter Scan von Dokumenten</td>
-              <td>Flüchtiger RAM / temporärer interner Cache</td>
+              <td>Arbeitsspeicher und temporärer App-Speicher während der Verarbeitung</td>
               <td>Keine; nach Fertigstellung der Ziel-PDF gelöscht</td>
             </tr>
             <tr>
@@ -151,10 +152,10 @@
               <td>Keine; wird direkt in das Ziel-PDF eingebrannt</td>
             </tr>
             <tr>
-              <td><strong>Darstellungseinstellungen</strong></td>
-              <td>Auswahl System-/Hell-/Dunkel-Modus</td>
-              <td>Lokaler DataStore</td>
-              <td>Keine</td>
+              <td><strong>Verlauf, Darstellung und Pro-Ablaufvorlagen</strong></td>
+              <td>Zuletzt geöffnete Dokumente, Theme, Ablauf-Favoriten und Ablaufdefinitionen</td>
+              <td>Private App-Einstellungen</td>
+              <td>Keine Übertragung durch die App; Ablaufvorlagen enthalten keine Passwörter.</td>
             </tr>
           </tbody>
         </table>
@@ -164,7 +165,7 @@
     <section id=externe-funktionen>
       <h2>5. Externe System-Aktionen (Teilen &amp; Drucken)</h2>
       <p>
-        Wenn Sie im PDF-Betrachter die Funktionen <em>„Teilen“</em> oder <em>„Drucken“</em> ausführen, nutzt PDFPouch die standardmäßigen Schnittstellen des Android-Betriebssystems:
+        Bei „Teilen“, „Drucken“ oder beim Öffnen eines bestätigten Links übergibt die App Inhalte oder die gewählte URL an die von Ihnen ausgewählte Android-App, den Druckdienst oder Browser. Deren Datenschutzbedingungen gelten zusätzlich. Besuche dieser Website werden von GitHub Pages gehostet; GitHub protokolliert Besucher-IP-Adressen aus Sicherheitsgründen. Weitere Informationen stehen in der <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub-Datenschutzerklärung</a>.
       </p>
       <ul>
         <li><strong>Teilen (Share Sheet):</strong> Die PDF-Datei wird an die von Ihnen explizit ausgewählte Dritt-App (z. B. E-Mail-Client, Messenger) übergeben. Für die Verarbeitung dort gelten die Datenschutzbestimmungen des jeweiligen Anbieters.</li>
@@ -185,7 +186,7 @@
 
     <section id=kontakt>
       <h2>7. Support &amp; Kontakt</h2>
-      <p>Wenn Sie Fragen zum Datenschutz bei PDFPouch haben, Feedback geben möchten oder Unterstützung benötigen, wenden Sie sich bitte direkt an:</p>
+      <p>Wenn Sie Fragen zum Datenschutz bei PDFPouch oder PDFPouch Pro haben, Feedback geben möchten oder Unterstützung benötigen, wenden Sie sich bitte direkt an:</p>
       <div class=contact-box>
         <strong>AppsMakerDeluxe</strong><br>
         E-Mail für Datenschutz &amp; App-Support:<br>
